@@ -7,12 +7,5 @@ Repository for RGS14 project.
 ## Main scripts: :file_folder: 
 
 _**Data preprocessing:**_ 
-  * filename1.m : Downsamples data to 1kHz.
+  * power_spectrum_systematic_sleep_rgs14_03032022.m : Computes theta coherence for wake and REM. 
 
-_**Sleep stages analysis:**_ 
-  
-  * filename2.m
- 
-_**Event detection:**_ 
-  
-  * filename3.m
