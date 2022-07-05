@@ -2,7 +2,7 @@ Dependencies: To-add.
 
 
 # RGS14
-Repository for RGS14 project. 
+Repository for Navarro-Lovato et al. 2023 in prep. t. 
 
 ## Main scripts: :file_folder: 
 
