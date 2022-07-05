@@ -8,4 +8,12 @@ Repository for Navarro-Lovato et al. 2023 in prep. t.
 
 _**Data preprocessing:**_ 
   * power_spectrum_systematic_sleep_rgs14_03032022.m : Computes theta coherence for wake and REM. 
+  
+  
+  ## Credits:
+  - Irene Navarro-Lobato
+  - Adrian Aleman-Zapata
+  - Shekhar Narayanan
+  - Abdelrahman Rayan
+  - Kopal Agarwal
 
