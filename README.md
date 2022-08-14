@@ -10,7 +10,7 @@ _**Data preprocessing:**_
   * power_spectrum_systematic_sleep_rgs14_03032022.m : Computes theta coherence for wake and REM. 
   
   
-  ## Credits:
+  ## Code credits:
   - Irene Navarro-Lobato
   - Adrian Aleman-Zapata
   - Shekhar Narayanan
