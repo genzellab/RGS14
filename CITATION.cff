@@ -15,8 +15,6 @@ authors:
       Donders Institute for Brain, Cognition and
       Behaviour
     orcid: 'https://orcid.org/0000-0002-9894-4370'
-  - given-names: Irene
-    family-names: Navarro-Lobato
   - given-names: Abdelrahman
     family-names: Rayan 
   - given-names: Shekhar
@@ -25,6 +23,8 @@ authors:
     family-names: Agarwal    
   - given-names: Pelin
     family-names: Özsezer
+  - given-names: Irene
+    family-names: Navarro-Lobato
     
 license: MIT    
 repository-code: 'https://github.com/genzellab/RGS14'
