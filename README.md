@@ -12,5 +12,5 @@ doi: https://doi.org/10.1101/2022.11.21.517356
   - Abdelrahman Rayan
   - Kopal Agarwal
   - Pelin Özsezer
-  - Milan Bogers (early stage code tester)
+  - Milan Bogers 
 
