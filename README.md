@@ -6,8 +6,8 @@ Scripts for "Learning Fast and Slow: Increased cortical plasticity leads to memo
 doi: https://doi.org/10.1101/2022.11.21.517356 
   
   ## Code credits:
+  - [Adrian Aleman-Zapata](https://github.com/Aleman-Z/)
   - Irene Navarro-Lobato
-  - Adrian Aleman-Zapata
   - Shekhar Narayanan  
   - Abdelrahman Rayan
   - Kopal Agarwal
