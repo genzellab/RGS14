@@ -1,8 +1,9 @@
 Dependencies: To-add. 
 
 
-# RGS14
-Repository for Navarro-Lovato et al. 2023 in prep. 
+# RGS14 repository
+Scripts for "Learning Fast and Slow: Increased cortical plasticity leads to memory interference and enhanced hippocampal-cortical interactions." 
+doi: https://doi.org/10.1101/2022.11.21.517356 
 
 ## Main scripts: :file_folder: 
 
