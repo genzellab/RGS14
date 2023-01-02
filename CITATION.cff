@@ -19,6 +19,10 @@ authors:
     family-names: Navarro-Lobato
   - given-names: Kopal
     family-names: Agarwal
+  - given-names: Shekhar
+    family-names: Narayanan
+  - given-names: Pelin
+    family-names: Özsezer
     
 license: MIT    
 repository-code: 'https://github.com/genzellab/RGS14'
