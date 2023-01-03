@@ -28,7 +28,7 @@ authors:
   - given-names: Irene
     family-names: Navarro-Lobato
     
-license: MIT    
+license: GNU General Public License v3.0    
 repository-code: 'https://github.com/genzellab/RGS14'
 keywords:
   - RGS14
