@@ -11,6 +11,6 @@ doi: https://doi.org/10.1101/2022.11.21.517356
   - Shekhar Narayanan  
   - Abdelrahman Rayan
   - Kopal Agarwal
-  - Pelin Özsezer
+  - [Pelin Özsezer](https://github.com/pelinozsezer)
   - Milan Bogers 
 
