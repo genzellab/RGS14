@@ -3,7 +3,7 @@
 
 ------------------------------------
 
-![Pipeline](https://github.com/pelinozsezer/RGS14/blob/main/nonrem_oscillations/Spectrograms%26GrangerCausality/pipeline.png =500x437)
+
 <a href="url"><img src="https://github.com/pelinozsezer/RGS14/blob/main/nonrem_oscillations/Spectrograms%26GrangerCausality/pipeline.png" align="center" height="500" width="437" ></a>
 
 
