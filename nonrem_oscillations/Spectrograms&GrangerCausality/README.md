@@ -3,5 +3,5 @@
 
 ------------------------------------
 
-![Pipeline](https://github.com/pelinozsezer/RGS14/blob/main/nonrem_oscillations/Spectrograms%26GrangerCausality/pipeline.png)
+![Pipeline](https://github.com/pelinozsezer/RGS14/blob/main/nonrem_oscillations/Spectrograms%26GrangerCausality/pipeline.png =500x437)
 
