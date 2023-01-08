@@ -1,7 +1,6 @@
 function [freq]=time_frequency(ft_data1,freqrange,toy)
 
 % Compute spectrogram
-
 cfg = [];
 cfg.method = 'mtmconvol';
 cfg.taper = 'dpss';

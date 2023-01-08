@@ -142,8 +142,6 @@ rat8_SD14_bp_c2_rgs=rat8(x==1,:);
 save('rat_SD_grouped_cluster2_rgs.mat');
 
 
-
-
 %%find empty cells
 pp=cellfun(@isempty,GC_raw_veh(:,7));
 [i,j] = find(pp);
@@ -157,8 +155,6 @@ GC_bandpassed_veh(start:end_,7)=num2cell(sd);
 
 %
 save('waveforms_ripple_cluster2_rgs.mat','waveforms_cluster2_bp_rgs','waveforms_cluster2_raw_rgs','-v7.3');
-
-
 
 
 

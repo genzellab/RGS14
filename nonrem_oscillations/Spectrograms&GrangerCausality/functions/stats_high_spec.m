@@ -1,5 +1,5 @@
 
-function [zmap]=stats_high(freq1,freq2,w)
+function [zmap]=stats_high_spec(freq1,freq2,w)
 ntrials=size(freq1.powspctrm,1);
 %Requires converting NaNs values into zeros.
 no1=freq1.powspctrm;

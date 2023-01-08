@@ -1,5 +1,5 @@
 
-function [zmap]=stats_high_pelin(g2,g,i,j)
+function [zmap]=stats_high_granger(g2,g,i,j)
 %ntrials=size(freq1.powspctrm,1);
 a=[i j];
 ntrials=size(g2, 5);

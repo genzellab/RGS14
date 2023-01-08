@@ -1,5 +1,5 @@
 function [granger,freq]=createauto_timefreq(data1,freqrange,toy)
-% Compute Multitaper
+
 equis=0.5;
        
 cfg = [];

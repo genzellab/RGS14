@@ -1,3 +1,4 @@
+
 %% Pelin Özsezer
 % Extracts ripples from waveforms; 
 % Generates the data of features; 
@@ -5,7 +6,6 @@
 % Generates density maps; Thresholds; 
 % Fits GMM model; Finds clusters per treatment; 
 % Creates new files per cluster and per treatment.
-
 
 clc
 clear
@@ -409,6 +409,7 @@ saveas(gcf,'4clusters.fig')
 %%% CROP CLUSTER DATA %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
+
     %% cluster 1
     cluster_1_idx=[];
     idx_no=[];
@@ -516,8 +517,6 @@ saveas(gcf,'4clusters.fig')
 
    waveforms_cluster4_bp_rgs=GC_bandpassed_rgs;
    waveforms_cluster4_bp_rgs= waveforms_cluster4_bp_rgs(cluster4_idx_rgs,:);
-
-
 
 
    %%
