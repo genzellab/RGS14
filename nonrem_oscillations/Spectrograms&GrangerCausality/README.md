@@ -1,5 +1,5 @@
 # :sparkles: Spectrograms & Granger Causality :sparkles:
-:pushpin: **Requirements**: [FieldTrip](https://github.com/fieldtrip/fieldtrip), [N-dimensional histogram](https://www.mathworks.com/matlabcentral/fileexchange/23897-n-dimensional-histogram), [Image Processing Toolbox](https://www.mathworks.com/products/image.html), [Statistics and Machine Learning Toolbox](https://www.mathworks.com/products/statistics.html), [Signal Processing Toolbox](https://www.mathworks.com/products/signal.html), [Deep Learning HDL Toolbox](https://www.mathworks.com/products/deep-learning-hdl.html), [Wavelet Toolbox](https://www.mathworks.com/products/wavelet.html), Mapping Toolbox, [Symbolic Math Toolbox](https://www.mathworks.com/products/symbolic.html), Database Toolbox, [Computer Vision Toolbox](https://www.mathworks.com/products/computer-vision.html), [Bioinformatics Toolbox](https://www.mathworks.com/products/bioinfo.html),
+:pushpin: **Requirements**: [FieldTrip](https://github.com/fieldtrip/fieldtrip), [N-dimensional histogram](https://www.mathworks.com/matlabcentral/fileexchange/23897-n-dimensional-histogram), [Image Processing Toolbox](https://www.mathworks.com/products/image.html), [Statistics and Machine Learning Toolbox](https://www.mathworks.com/products/statistics.html), [Signal Processing Toolbox](https://www.mathworks.com/products/signal.html), [Deep Learning HDL Toolbox](https://www.mathworks.com/products/deep-learning-hdl.html), [Wavelet Toolbox](https://www.mathworks.com/products/wavelet.html), [Symbolic Math Toolbox](https://www.mathworks.com/products/symbolic.html), [Computer Vision Toolbox](https://www.mathworks.com/products/computer-vision.html), [Bioinformatics Toolbox](https://www.mathworks.com/products/bioinfo.html).
 
 
 ------------------------------------
@@ -14,6 +14,6 @@
 
 - **GC_ripple_4clusters_median_wa.m**: Prepares data for spectrograms and Granger analysis; Finds the 2000 ripples closest to the median in amplitude; Removes artifacts.
 
--**spectrogram_main.m**: Generates spectrograms and contrasts; Runs statistics on contrasts.
+- **spectrogram_main.m**: Generates spectrograms and contrasts; Runs statistics on contrasts.
 
--**granger_main.m**: Generates Granger Analysis plots and contrasts; Runs statistics on contrasts.
+- **granger_main.m**: Generates Granger Analysis plots and contrasts; Runs statistics on contrasts.
