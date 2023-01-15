@@ -17,3 +17,10 @@
 - **spectrogram_main.m**: Generates spectrograms and contrasts; Runs statistics on contrasts.
 
 - **granger_main.m**: Generates Granger Analysis plots and contrasts; Runs statistics on contrasts.
+
+------------------------------------
+
+:exclamation: Section 2 of _GC_ripple_4clusters_median_wa.m_ is manual. Threshold values of each cluster for both treatments can be found below:
+
+_**Vehicle Threshold Values**_
+<a href="url"><img src="https://github.com/pelinozsezer/RGS14/blob/main/nonrem_oscillations/Spectrograms%26GrangerCausality/vehicle_threshold_values_per_cluster.png" align="center" height="300" width="600" ></a>
