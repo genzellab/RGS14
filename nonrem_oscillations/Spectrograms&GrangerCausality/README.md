@@ -23,8 +23,8 @@
 :exclamation: Section 2 of _GC_ripple_4clusters_median_wa.m_ is manual. Threshold values of each cluster for both treatments can be found below:
 
 _**Vehicle Threshold Values**_
-<a href="url"><img src="https://github.com/pelinozsezer/RGS14/blob/main/nonrem_oscillations/Spectrograms%26GrangerCausality/vehicle_threshold_values_per_cluster.png" align="center" height="300" width="600" ></a>
+<a href="url"><img src="https://github.com/pelinozsezer/RGS14/blob/main/nonrem_oscillations/Spectrograms%26GrangerCausality/vehicle_threshold_value_per_cluster.png" align="center" height="300" width="600" ></a>
 
 
 _**RGS Threshold Values**_
-<a href="url"><img src="https://github.com/pelinozsezer/RGS14/blob/main/nonrem_oscillations/Spectrograms%26GrangerCausality/rgs_threshold_values_per_cluster.png" align="center" height="300" width="600" ></a>
+<a href="url"><img src="https://github.com/pelinozsezer/RGS14/blob/main/nonrem_oscillations/Spectrograms%26GrangerCausality/rgs_threshold_value_per_cluster.png" align="center" height="300" width="600" ></a>
