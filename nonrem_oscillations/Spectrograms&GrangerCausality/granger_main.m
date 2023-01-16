@@ -1,5 +1,5 @@
-%% Granger Analysis
 
+%% Granger Analysis
 clc
 clear
 addpath('/Users/pelinozsezer/Documents/Science/Radboud/RGS-Project/code/ripples/fieldtrip');
@@ -15,7 +15,6 @@ GC_rgs=[GC_cluster1_rgs_median_wa; GC_cluster2_rgs_median_wa;...
     GC_cluster3_rgs_median_wa; GC_cluster4_rgs_median_wa];
 GC_Bp_rgs=[GC_Bp_cluster1_rgs_median_wa; GC_Bp_cluster2_rgs_median_wa;...
     GC_Bp_cluster3_rgs_median_wa; GC_Bp_cluster4_rgs_median_wa];
-
 
 %% What would you like to analyse?
 input1 = GC_veh;
@@ -67,9 +66,9 @@ colormap(hot(256))
 xlim([-1 1])
 xlabel('time')
 ylabel('frequency')
-title('PFC to HPC - RGS') % change accordingly
+title('PFC to HPC - RGS') 
 
-saveas(gcf,'pfc2hpc_rgs_020_2s.jpg'); % change accordingly
+saveas(gcf,'pfc2hpc_rgs_020_2s.jpg');
 saveas(gcf,'pfc2hpc_rgs_020_2s.pdf');
 close all
 
@@ -77,13 +76,13 @@ close all
 imagesc(-1.1:0.01:1.1,granger.freq,tf_p-tf_p2);
 axis xy % flip vertically
 colorbar
-colormap(colorbar_treatment) % change accordingly
+colormap(colorbar_treatment) 
 xlim([-1 1])
 xlabel('time')
 ylabel('frequency')
-title('PFC to HPC - Contrast: Veh-RGS'); % change accordingly
+title('PFC to HPC - Contrast: Veh-RGS'); 
 
-saveas(gcf,'pfc2hpc_contrast_veh-rgs_020_2s.jpg'); % change accordingly
+saveas(gcf,'pfc2hpc_contrast_veh-rgs_020_2s.jpg'); 
 saveas(gcf,'pfc2hpc_contrast_veh-rgs_020_2s.pdf');
 close all
 
@@ -96,7 +95,9 @@ q = input1_Bp;
 %% Iteration of GC trials Veh
 iter = 30;
 m = 400;
-grangerspctrm_concat = zeros(2,2,length(freqrange)-1,length([-1.1:0.01:1.1]),iter);
+% grangerspctrm_concat = zeros(2,2,length(freqrange)-1,length([-1.1:0.01:1.1]),iter); % If you start from 0 Hz
+grangerspctrm_concat = zeros(2,2,length(freqrange),length([-1.1:0.01:1.1]),iter); % 
+
 for i = 1:iter
     i
     randorder = randperm(length(q));
@@ -126,7 +127,6 @@ end
 
 granger_tf= grangerspctrm_concat;
 
-
 %% input2
 p = input2;
 q = input2_Bp;
@@ -134,7 +134,9 @@ q = input2_Bp;
 % Iteration of GC trials
 iter = 30;
 m = 400;
-grangerspctrm_concat = zeros(2,2,length(freqrange)-1,length([-1.1:0.01:1.1]),iter);
+% grangerspctrm_concat = zeros(2,2,length(freqrange)-1,length([-1.1:0.01:1.1]),iter); % if you start from 0 Hz
+grangerspctrm_concat = zeros(2,2,length(freqrange),length([-1.1:0.01:1.1]),iter);
+
 for i = 1:iter
     i
     randorder = randperm(length(q));
@@ -158,7 +160,6 @@ for i = 1:iter
     cfg.bsfreq = [49 51];
     Data = ft_preprocessing(cfg,Data);
 
-
     [granger_tf2] = createauto_timefreq(Data,freqrange,[-1.1:0.01:1.1]);
     grangerspctrm_concat2(:,:,:,:,i) = granger_tf2.grangerspctrm;
 end
@@ -172,15 +173,15 @@ b=2; %hpc
 J=imagesc(granger.time,granger.freq,zmap);
 axis xy % flip vertically
 colorbar()
-colormap('colorbar_treatment') % change accordingly
-J=title('PFC to HPC - Stats for Contrast: Veh-RGS'); % change accordingly
+colormap('colorbar_treatment') 
+J=title('PFC to HPC - Stats for Contrast: Veh-RGS'); 
 J.FontSize=12;
 xlabel('Time (s)')
 ylabel('Frequency (Hz)')
 xlim([-1 1])
 
-saveas(gcf,'pfc2hpc_stats_contrast_veh-rgs_020_2s.jpg'); % change accordingly
-saveas(gcf,'pfc2hpc_stats_contrast_veh-rgs_020_2s.pdf'); % change accordingly
+saveas(gcf,'pfc2hpc_stats_contrast_veh-rgs_020_2s.jpg'); 
+saveas(gcf,'pfc2hpc_stats_contrast_veh-rgs_020_2s.pdf'); 
 close all
 
 %% HPC->PFC 2s
@@ -203,9 +204,9 @@ colormap(hot(256))
 xlim([-1 1])
 xlabel('time')
 ylabel('frequency')
-title('HPC to PFC - Veh') % change accordingly
+title('HPC to PFC - Veh') 
 
-saveas(gcf,'hpc2pfc_veh_020_2s.jpg'); % change accordingly
+saveas(gcf,'hpc2pfc_veh_020_2s.jpg'); 
 saveas(gcf,'hpc2pfc_veh_020_2s.pdf');
 close all
 
@@ -218,9 +219,9 @@ colormap(hot(256))
 xlim([-1 1])
 xlabel('time')
 ylabel('frequency')
-title('HPC to PFC - RGS') % change accordingly
+title('HPC to PFC - RGS') 
 
-saveas(gcf,'hpc2pfc_rgs_020_2s.jpg'); % change accordingly
+saveas(gcf,'hpc2pfc_rgs_020_2s.jpg'); 
 saveas(gcf,'hpc2pfc_rgs_020_2s.pdf');
 close all
 
@@ -228,13 +229,13 @@ close all
 imagesc(-1.1:0.01:1.1, granger.freq, tf_p-tf_p2);
 axis xy % flip vertically
 colorbar
-colormap(colorbar_treatment) % change accordingly
+colormap(colorbar_treatment) 
 xlim([-1 1])
 xlabel('time')
 ylabel('frequency')
-title('HPC to PFC - Contrast: Veh-RGS'); % change accordingly
+title('HPC to PFC - Contrast: Veh-RGS'); 
 
-saveas(gcf,'hpc2pfc_contrast_veh-rgs_020_2s.jpg'); % change accordingly
+saveas(gcf,'hpc2pfc_contrast_veh-rgs_020_2s.jpg');
 saveas(gcf,'hpc2pfc_contrast_veh-rgs_020_2s.pdf');
 close all
 
@@ -247,7 +248,9 @@ q = input1_Bp;
 %% Iteration of GC trials Veh
 iter = 30;
 m = 400;
-grangerspctrm_concat = zeros(2,2,length(freqrange)-1,length([-1.1:0.01:1.1]),iter);
+% grangerspctrm_concat = zeros(2,2,length(freqrange)-1,length([-1.1:0.01:1.1]),iter); % if you start from 0 Hz
+grangerspctrm_concat = zeros(2,2,length(freqrange),length([-1.1:0.01:1.1]),iter);
+
 for i = 1:iter
     i
     randorder = randperm(length(q));
@@ -272,11 +275,9 @@ for i = 1:iter
 
     [granger_tf] = createauto_timefreq(Data,freqrange,[-1.1:0.01:1.1]);
     grangerspctrm_concat(:,:,:,:,i) = granger_tf.grangerspctrm;
-
 end
 
 granger_tf= grangerspctrm_concat;
-
 
 %%  input2
 p = input2;
@@ -285,7 +286,9 @@ q = input2_Bp;
 %% Iteration of GC trials
 iter = 30;
 m = 400;
-grangerspctrm_concat = zeros(2,2,length(freqrange)-1,length([-1.1:0.01:1.1]),iter);
+% grangerspctrm_concat = zeros(2,2,length(freqrange)-1,length([-1.1:0.01:1.1]),iter); % if you start from 0 Hz
+grangerspctrm_concat = zeros(2,2,length(freqrange),length([-1.1:0.01:1.1]),iter);
+
 for i = 1:iter
     i
     randorder = randperm(length(q));
@@ -311,7 +314,6 @@ for i = 1:iter
 
     [granger_tf2] = createauto_timefreq(Data,freqrange,[-1.1:0.01:1.1]);
     grangerspctrm_concat2(:,:,:,:,i) = granger_tf2.grangerspctrm;
-
 end
 
 granger_tf2= grangerspctrm_concat2;
@@ -323,7 +325,7 @@ b=1; %pfc
 J=imagesc(granger.time,granger.freq,zmap);
 axis xy % flip vertically
 colorbar()
-colormap('colorbar_treatment') % change accordingly
+colormap('colorbar_treatment') 
 J=title('HPC to PFC - Stats for Contrast: Veh-RGS'); 
 J.FontSize=12;
 xlabel('Time (s)')

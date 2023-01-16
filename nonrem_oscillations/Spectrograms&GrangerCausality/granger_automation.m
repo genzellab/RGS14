@@ -19,7 +19,6 @@ Data = ft_preprocessing(cfg,Data);
 
 [granger,freq]=createauto_timefreq(Data,freqrange,[-1.1:0.01:1.1]);
 
-
 %%  input2
 clear Data
 fn = 1000;
