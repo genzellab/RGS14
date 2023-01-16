@@ -34,7 +34,6 @@ GC_Bp_cluster4_veh        = waveforms_cluster4_bp_veh(:,1);
 GC_time_cluster4_veh      = waveforms_cluster4_raw_veh(:,2:4);
 
 %% RGS
-% Prepare data
 
 % cluster 1
 load('waveforms_cluster1_rgs.mat'); 
@@ -61,13 +60,12 @@ GC_Bp_cluster4_rgs        = waveforms_cluster4_bp_rgs(:,1);
 GC_time_cluster4_rgs      = waveforms_cluster4_raw_rgs(:,2:4);
 
 
-
 %% SECTION 2 - Artifact Rejection - ALL MANUAL!
 % Visually detect artifacts and remove them by setting thresholds
-% Please run cluster by cluster 
+% Please run cluster by cluster! 
 
 %% VEH
-%% per cluster 
+% per cluster 
 R = (cellfun(@(equis1) max(abs(hilbert(equis1(2,3001-50:3001+50)))),GC_Bp_cluster1_veh));
 
 [~,r_nl]=sort(abs(R-median(R)),'ascend');
@@ -111,17 +109,14 @@ end
 
 c1_veh=[];
 for i=1:size(x,1)  
-   if max(x(i,:))>48 || min(x(i,:))<-45
+   if max(abs(diff(x(i,:))))>116
        c1_veh=[c1_veh;i];
-   else
+  else
         plot(x(i,:),'b-')
         hold on
    end
-        
 end
 ylim([-300 300])
-
-
 
 GC_cluster1_veh_median_wa       =GC_cluster1_veh;
 GC_Bp_cluster1_veh_median_wa    =GC_Bp_cluster1_veh;
@@ -131,12 +126,11 @@ GC_cluster1_veh_median_wa(i,:)       =[];
 GC_Bp_cluster1_veh_median_wa(i,:)    =[];
 GC_time_cluster1_veh_median_wa(i,:)  =[];
 
-
-save GC_cluster1_veh_median_wa.mat
-
+save GC_cluster1_veh_median_wa.mat GC_Bp_cluster1_veh_median_wa...
+    GC_time_cluster1_veh_median_wa GC_cluster1_veh_median_wa 
 
 %% RGS
-%% per cluster
+% per cluster
 R = (cellfun(@(equis1) max(abs(hilbert(equis1(2,3001-50:3001+50)))),GC_Bp_cluster1_rgs));
 
 [~,r_nl]=sort(abs(R-median(R)),'ascend');
@@ -170,7 +164,6 @@ cfg.bpfilter = 'yes';
 cfg.bpfreq = [100 300];
 Data = ft_preprocessing(cfg,Data);
 
-
 % Detect artifact (overlay all ripples)
 x=[];
 for i=1:length(Data.trial)
@@ -181,12 +174,12 @@ end
 
 c1_rgs=[];
 for i=1:size(x,1)  
-   if max(x(i,:))>42 || min(x(i,:))<-48
+   if max(abs(diff(x(i,:))))>58
        c1_rgs=[c1_rgs;i];
    else
         plot(x(i,:),'b-')
         hold on
-   end      
+  end      
 end
 ylim([-300 300])
 
@@ -198,8 +191,8 @@ GC_cluster1_rgs_median_wa(i,:)       =[];
 GC_Bp_cluster1_rgs_median_wa(i,:)    =[];
 GC_time_cluster1_rgs_median_wa(i,:)  =[];
 
-save GC_cluster1_rgs_median_wa.mat
-
+save GC_cluster1_rgs_median_wa.mat GC_Bp_cluster1_rgs_median_wa...
+    GC_time_cluster1_rgs_median_wa GC_cluster1_rgs_median_wa 
 
 
 %% SECTION 3 - Save All In One File 

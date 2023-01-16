@@ -1,6 +1,4 @@
 
-%% MANUAL SCRIPT! %%
-
 %% SPECTROGRAM
 clc
 clear
@@ -34,13 +32,13 @@ cfg.channel      = channel;
 cfg.colormap     = colormap(hot);
 
 ft_singleplotTFR(cfg, freq); 
-g=title('PFC - Veh'); % change accordingly
+g=title('PFC - Veh'); 
 g.FontSize=12;
 xlabel('Time (s)')
 ylabel('Frequency (Hz)')
 xlim([-1 1])
 
-saveas(gcf,'020_2s_veh.jpg'); % change accordingly
+saveas(gcf,'020_2s_veh.jpg'); 
 saveas(gcf,'020_2s_veh.pdf');
 close all
 
@@ -51,7 +49,7 @@ cfg.channel      = channel;
 cfg.colormap     = colormap(hot);
 
 ft_singleplotTFR(cfg, freq2); 
-g=title('PFC - RGS'); % change accordingly
+g=title('PFC - RGS'); 
 g.FontSize=12;
 xlabel('Time (s)')
 ylabel('Frequency (Hz)')
@@ -61,20 +59,19 @@ saveas(gcf,'020_2s_rgs.jpg');
 saveas(gcf,'020_2s_rgs.pdf');
 close all
 
-
 % Contrast
 cfg              = [];
 cfg.channel      = channel;
 
 ft_singleplotTFR(cfg, subs_freq); 
-colormap(colorbar_treatment); % change accordingly
-g=title('PFC - Contrast: Veh-RGS'); % change accordingly
+colormap(colorbar_treatment);
+g=title('PFC - Contrast: Veh-RGS'); 
 g.FontSize=12;
 xlabel('Time (s)')
 ylabel('Frequency (Hz)')
 xlim([-1 1])
 
-saveas(gcf,'contrast_veh-rgs_020_2s.jpg'); % change accordingly
+saveas(gcf,'contrast_veh-rgs_020_2s.jpg');
 saveas(gcf,'contrast_veh-rgs_020_2s.pdf');
 
 
@@ -100,4 +97,3 @@ xlim([-1 1])
 saveas(gcf,'stats_contrast_veh-rgs_020_2s.jpg'); 
 saveas(gcf,'stats_contrast_veh-rgs_020_2s.pdf');
 close all
-
