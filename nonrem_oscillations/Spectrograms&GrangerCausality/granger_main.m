@@ -40,10 +40,10 @@ tf_p2=squeeze(granger2.grangerspctrm(i,j,:,:));
 %% Normalize the colorbar
 zmin= min([min(tf_p, [],'all'), min(tf_p2, [],'all')],[],'all');
 zmax= max([max(tf_p, [], 'all'), max(tf_p2, [],'all')],[],'all');
-clim_all =[zmin zmax];
+clim_pfc2hpc =[zmin zmax];
 
 % input1
-imagesc(-1:0.01:1,granger.freq,tf_p,clim_all);
+imagesc(-1:0.01:1,granger.freq,tf_p,clim_pfc2hpc);
 axis xy % flip vertically
 colorbar
 colormap(hot(256))
@@ -58,7 +58,7 @@ saveas(gcf,'pfc2hpc_veh_020_2s.pdf');
 close all
 
 % input2
-imagesc(-1:0.01:1,granger2.freq, tf_p2,clim_all);
+imagesc(-1:0.01:1,granger2.freq, tf_p2,clim_pfc2hpc);
 axis xy % flip vertically
 colorbar
 colormap(hot(256))
@@ -193,10 +193,10 @@ tf_p2=squeeze(granger2.grangerspctrm(i,j,:,:));
 
 zmin= min([min(tf_p2, [],'all'), min(tf_p, [],'all')],[],'all');
 zmax= max([max(tf_p2, [], 'all'), max(tf_p2, [],'all')],[],'all');
-clim =[zmin zmax];
+clim_hpc2pfc =[zmin zmax];
 
 % input1
-imagesc(-1:0.01:1,granger.freq,tf_p,clim_all);
+imagesc(-1:0.01:1,granger.freq,tf_p,clim_hpc2pfc);
 axis xy % flip vertically
 colorbar
 colormap(hot(256))
@@ -211,7 +211,7 @@ saveas(gcf,'hpc2pfc_veh_020_2s.pdf');
 close all
 
 % input2
-imagesc(-1:0.01:1,granger2.freq, tf_p2,clim_all);
+imagesc(-1:0.01:1,granger2.freq, tf_p2,clim_hpc2pfc);
 axis xy % flip vertically
 colorbar
 colormap(hot(256))
