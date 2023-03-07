@@ -1,4 +1,4 @@
-Dependencies: To-add. 
+Dependencies: Some scripts in the "nonrem_oscillations" folder will require the [CorticoHippocampal](https://github.com/Aleman-Z/CorticoHippocampal/) and [Adritools](https://github.com/Aleman-Z/ADRITOOLS) repositories in the path.   
 
 
 # RGS14 repository
