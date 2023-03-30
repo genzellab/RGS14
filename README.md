@@ -14,3 +14,8 @@ _Dependencies:_ Some scripts in the "nonrem_oscillations" folder will require th
   - [Pelin Özsezer](https://github.com/pelinozsezer)
   - Milan Bogers 
 
+## Older versions of the scripts
+
+[LFP_RGS14](https://github.com/MilanBogers1/LFP_RGS14) (Milan/Kopal)
+
+[LFP_spike analysis](https://github.com/ShekharNarayanan/RGS14_Genzel_Lab) (Shekhar)
