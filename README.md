@@ -4,6 +4,7 @@ doi: https://doi.org/10.1101/2022.11.21.517356
 
 _Dependencies:_ Some scripts in the "nonrem_oscillations" folder will require the [CorticoHippocampal](https://github.com/Aleman-Z/CorticoHippocampal/) and [ADRITOOLS](https://github.com/Aleman-Z/ADRITOOLS) repositories in the path.   
 
+The spiking activity data was generated after performing a consensus-based spike sorting with spikeinterface adapted to our OS task using [this pipeline](https://github.com/aleman-z/spikesorting). 
   
   ## Code credits:
   - [Adrian Aleman-Zapata](https://github.com/Aleman-Z/)
