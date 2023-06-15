@@ -1,6 +1,6 @@
 # RGS14 repository
-Scripts for "Learning Fast and Slow: Increased cortical plasticity leads to memory interference and enhanced hippocampal-cortical interactions." 
-doi: https://doi.org/10.1101/2022.11.21.517356 
+Scripts for "Increased cortical plasticity leads to memory interference and enhanced hippocampal-cortical interactions." 
+doi: https://doi.org/10.7554/eLife.84911
 
 _Dependencies:_ Some scripts in the "nonrem_oscillations" folder will require the [CorticoHippocampal](https://github.com/Aleman-Z/CorticoHippocampal/) and [ADRITOOLS](https://github.com/Aleman-Z/ADRITOOLS) repositories in the path.   
 
