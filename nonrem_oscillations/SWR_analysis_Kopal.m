@@ -174,7 +174,7 @@ Cortex=Cortex.*(0.195);
                         if length(states)<45*60*4
                             states=[states nan(1,45*60*4-length(states))]; %Fill with NaNs.
                         else
-                            states=states(1:45*60*4); %Take only 45 min.
+                            states=states(1:45*60*4); %Take only 45 min x 4
                         end
                         
                         
@@ -182,13 +182,13 @@ Cortex=Cortex.*(0.195);
                         if length(HPC)<45*60*1000*4
                             HPC=[HPC.' (nan(45*60*1000*4-length(HPC),1).')]; %Fill with NaNs.
                         else
-                            HPC=HPC(1:45*60*1000*4).'; %Take only 45 min.
+                            HPC=HPC(1:45*60*1000*4).'; %Take only 45 min x 4
                         end
                         
                         if length(Cortex)<45*60*1000*4
                             Cortex=[Cortex.' (nan(45*60*1000*4-length(Cortex),1).')]; %Fill with NaNs.
                         else
-                            Cortex=Cortex(1:45*60*1000*4).'; %Take only 45 min.
+                            Cortex=Cortex(1:45*60*1000*4).'; %Take only 45 min x 4
                         end
 
                         
